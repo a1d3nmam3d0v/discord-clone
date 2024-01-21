@@ -1,0 +1,32 @@
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+ul {
+	list-style: none;
+}
+
+$primary-light: #7983f5;
+$primary-mid: #5865f2;
+$primary-dark: #404eed;
+$text-color: #23272a;
+$blackish: #23272a;
+$gray-bg: #f6f6f6;
+
+.gray-bg {
+	background-color: $gray-bg;
+}
+.bg-white {
+	background-color: #fff;
+}
+.bg-brandcolor {
+	background-color: $primary-mid;
+}
+
+// $display-font: "abc-ginto-nord-Blk", Impact, sans-serif;
+// $main-font-normal: "gg sans Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+$max-width: 1260px;

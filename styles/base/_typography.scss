@@ -1,0 +1,162 @@
+@import url("/fonts/gg-sans/stylesheet.css");
+
+$display-font: "abc-ginto-nord-Blk", Impact, sans-serif;
+$main-font-normal: "gg sans Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+:root {
+	font-family: $main-font-normal;
+	color: $text-color;
+}
+
+nav a {
+	font-family: $main-font;
+	font-weight: 600;
+	line-height: 22px;
+	color: #fff;
+}
+
+h1 {
+	font-family: $display-font;
+	text-transform: uppercase;
+	font-size: 56px;
+	color: #fff;
+	line-height: 1;
+
+	text-align: center;
+}
+
+h2 {
+	font: {
+		family: $main-font;
+		size: 48px;
+		weight: 800;
+	}
+	line-height: 58px;
+}
+
+h3 {
+	font: {
+		family: $main-font;
+		size: 32px;
+		weight: 700;
+	}
+
+	line-height: 38px;
+}
+
+.hero-text {
+	font-family: $main-font-normal;
+	font-size: 20px;
+	color: #fff;
+	line-height: 33px;
+	font-weight: normal;
+	margin-top: 0;
+	padding-top: 0;
+	margin: 40px 0px 10px;
+}
+
+p {
+	font: {
+		size: 20px;
+		weight: normal;
+		font-family: $main-font-normal;
+	}
+	line-height: 33px;
+}
+
+h2.cta {
+	font-family: $display-font;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+footer {
+	font-family: $main-font-normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+
+	font-family: $main-font-normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	form {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	li {
+		padding: 4px 0 0 0;
+		margin: 13px 0;
+		line-height: 15px;
+
+		& a:hover {
+			text-decoration: underline 1.5px solid #fff;
+		}
+	}
+	.nav-title {
+		color: $primary-mid;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 1022px) {
+	h1 {
+		text-align: left;
+		max-width: 70%;
+	}
+
+	.hero-text {
+		text-align: left;
+		font-size: 2vw;
+		line-height: 1.625;
+	}
+
+	h2 ~ p {
+		font-size: 2vw;
+	}
+
+	h2.cta {
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 5vw;
+		max-width: 100%;
+		margin-top: 0;
+	}
+
+	h2 {
+		font-size: 4vw;
+	}
+
+	.content {
+		width: 100%;
+		.hero-text {
+			font-size: 16px;
+			line-height: 26px;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+			max-width: 100%;
+		}
+	}
+	h2 ~ p {
+		font-size: 16px;
+	}
+
+	h2.cta ~ p {
+		text-align: left;
+	}
+
+	#feature4 {
+		& h2 {
+			font-size: 4vw;
+		}
+		> * {
+			text-align: left;
+		}
+	}
+}

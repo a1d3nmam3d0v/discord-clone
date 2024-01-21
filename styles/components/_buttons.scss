@@ -1,0 +1,86 @@
+button {
+	cursor: pointer;
+	border: none;
+	white-space: nowrap;
+	transition: all 0.5s ease;
+
+	&:hover {
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.nav-btn {
+	border-radius: 40px;
+	box-shadow: #000000 0px 0px 0px 0px;
+	font-family: $main-font;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 7px 16px;
+	text-align: end;
+	white-space: nowrap;
+
+	&.top:hover {
+		color: $primary-mid;
+	}
+	&.footer:hover {
+		background-color: $primary-light;
+	}
+}
+
+.cta.btn {
+	align-items: center;
+	border-radius: 28px;
+	display: flex;
+	font-family: $main-font;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 16px 32px;
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+.cta.btn.primary {
+	background-color: #ffffff;
+	color: #23272a;
+
+	&:hover {
+		color: $primary-mid;
+	}
+}
+
+.cta.btn.secondary {
+	background-color: #23272a;
+	color: #ffffff;
+
+	&:hover {
+		background-color: #313338;
+	}
+}
+
+.cta.btn.blue {
+	background-color: $primary-mid;
+	color: #fff;
+	justify-content: center;
+	margin-top: 1rem;
+
+	&:hover {
+		background-color: $primary-light;
+	}
+}
+
+footer {
+	button {
+		background-color: $primary-mid;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cta.btn.blue {
+		align-items: center;
+		width: 100%;
+	}
+}

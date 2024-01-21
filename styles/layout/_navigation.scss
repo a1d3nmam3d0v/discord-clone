@@ -1,0 +1,34 @@
+header {
+	background-color: $primary-dark;
+	line-height: 18px;
+	height: 80px;
+	width: 100%;
+
+	nav {
+		display: flex;
+		align-items: center;
+		height: 80px;
+		justify-content: space-between;
+
+		span {
+			margin: auto;
+		}
+
+		a {
+			padding: 10px;
+			margin: 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 1022px) {
+	.hamburger {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1022px) {
+	.navlinks {
+		visibility: hidden;
+	}
+}

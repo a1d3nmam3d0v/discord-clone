@@ -1,0 +1,78 @@
+img:not(.logo, .hamburger, .hero-bg-btmleft, .hero-bg-btmright) {
+	max-width: 100%;
+}
+
+// Two column layout
+.container {
+	padding: 120px 80px 100px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+	.column {
+		box-sizing: border-box;
+		flex-basis: 50%;
+
+		&.info {
+			max-width: 380px;
+		}
+	}
+}
+
+#feature4 {
+	padding: 40px 40px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	& > *:not(img) {
+		max-width: 980px;
+	}
+	& img {
+		width: 1180px;
+	}
+	& p {
+		margin-bottom: 0;
+	}
+	.container {
+		padding-bottom: 0;
+	}
+}
+
+#cta {
+	.container {
+		padding-top: 0;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1022px) {
+	.container {
+		padding: 80px 20px;
+	}
+
+	#feature4 img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+
+		.column.info {
+			padding: 0;
+			max-width: 100%;
+		}
+	}
+
+	#feature2 {
+		.container {
+			flex-direction: column-reverse;
+		}
+	}
+	#feature4 {
+		padding: 56px 24px 0px;
+	}
+}

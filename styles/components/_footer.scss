@@ -1,0 +1,103 @@
+footer {
+	background-color: $blackish;
+	color: white;
+	padding: 60px 20px 40px;
+
+	select {
+		background-color: $blackish;
+		color: #fff;
+		border: none;
+	}
+
+	.nav-grid-container {
+		display: grid;
+		margin: auto;
+		max-width: $max-width;
+		grid-template-columns: minmax(270px, 30%) auto auto auto auto;
+		grid-template-rows: 1fr;
+		padding-bottom: 1rem;
+		align-items: start;
+
+		.grid-item1 {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.social-media-icons {
+			ul {
+				display: flex;
+				gap: 1.75rem;
+			}
+		}
+
+		form {
+			position: relative;
+			left: 40px;
+		}
+
+		label:hover,
+		select:hover,
+		option:hover {
+			cursor: pointer;
+		}
+	}
+
+	.bottom-row {
+		max-width: 1180px;
+		display: flex;
+		border-top: $primary-mid solid 1px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 1022px) {
+	footer {
+		.nav-grid-container {
+			display: grid;
+			grid-template-rows: auto;
+			grid-template-columns: 50% auto auto;
+
+			.grid-item1 {
+				grid-row-end: span 2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	footer {
+		.nav-grid-container {
+			display: grid;
+			grid-template-areas:
+				"one one ."
+				"two three ."
+				"four five .";
+
+			.grid-item1 {
+				grid-area: one;
+			}
+
+			.grid-item2 {
+				grid-area: two;
+			}
+
+			.grid-item3 {
+				grid-area: three;
+			}
+
+			.grid-item4 {
+				grid-area: four;
+			}
+
+			.grid-item5 {
+				grid-area: five;
+			}
+		}
+		.bottom-row {
+			margin: auto;
+		}
+	}
+}
